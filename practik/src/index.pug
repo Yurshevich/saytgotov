@@ -1,0 +1,48 @@
+doctype html
+html(lang='ru')
+
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='stylesheet', href='styles/style.css')
+
+  body
+    include modules/header 
+
+    .banner
+        img(src="img/banner.jpeg", alt="")
+    h2 Услуги
+    .container
+        .text
+            ul
+                li Фотосъёмка различных событий (свадьбы, дни рождения, корпоративные мероприятия и т.д.).
+                li Проведение профессиональных фотосессий (портреты, семейные съёмки, фэшн-съёмки и пр.).
+                li Ретушь и обработка фотографий.
+                li Печать фотографий на различных материалах (бумага, холст, фотокниги и пр.).
+                li Прокат фотооборудования.
+                li Аренда фотостудии для проведения съёмок .
+    h2 Фото
+    .photos-container
+        .top-photos
+            img(src="img/1.jpeg", alt="Photo 1")
+            img(src="img/2.jpeg", alt="Photo 2")
+            img(src="img/3.jpeg", alt="Photo 3")
+        h4 Наша студия OOO "Фотолайн"
+        .bottom-photos
+            img(src="img/4.jpeg", alt="Photo 4")
+            img(src="img/5.jpeg", alt="Photo 5")
+            img(src="img/6.jpeg", alt="Photo 6")
+    <br><br>
+    h2 Наше местонахождение
+    h2 г .Ликно-Дулёво, ул.Победы, д.22
+    .map
+        div(style='position:relative;overflow:hidden;')
+        a(href='https://yandex.ru/maps/37141/likino-dulevo/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:0px;') &Lcy;&icy;&kcy;&icy;&ncy;&ocy;&#x2011;&Dcy;&ucy;&lcy;&iecy;&vcy;&ocy;
+        a(href='https://yandex.ru/maps/37141/likino-dulevo/?ll=38.954599%2C55.706047&utm_medium=mapframe&utm_source=maps&z=15' style='color:#eee;font-size:12px;position:absolute;top:14px;')
+            | &YAcy;&ncy;&dcy;&iecy;&kcy;&scy;&nbsp;&Kcy;&acy;&rcy;&tcy;&ycy; &mdash; &tcy;&rcy;&acy;&ncy;&scy;&pcy;&ocy;&rcy;&tcy;, &ncy;&acy;&vcy;&icy;&gcy;&acy;&tscy;&icy;&yacy;, &pcy;&ocy;&icy;&scy;&kcy;
+            | &mcy;&iecy;&scy;&tcy;
+        iframe(src='https://yandex.ru/map-widget/v1/?ll=38.954599%2C55.706047&z=15' frameborder='1' allowfullscreen='true' style='position:relative;')
+
+
+    include modules/footer.pug

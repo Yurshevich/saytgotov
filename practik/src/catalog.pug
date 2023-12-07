@@ -1,0 +1,42 @@
+doctype html
+html(lang='ru')
+
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='stylesheet', href='styles/style.css')
+
+  body
+    include modules/header 
+
+
+    h2 Наша команда
+    .photos-container2
+      .photo1
+        img(src='img/mixail.jpg', alt='Photo 1')
+        p.caption
+          h1 Михаил<br> работает с обработкой<br> ваших фото. Делает всё быстро и качественно.
+      .photo1
+        img(src='img/inga.jpg', alt='Photo 2')
+        p.caption
+          h1 Игнга<br> наш профессиональный фотограф.<br> Подбирает самые крутые<br> места для фоток.
+      .photo1
+        img(src='img/adel.jpg', alt='Photo 3')
+        p.caption
+          h1 Адель<br> стилист. Подберёт шикарный образ для<br> вашей фотоссесии.
+      .photo1
+        img(src='img/sveta.jpg', alt='Photo 4')
+        p.caption
+          h1 Света <br>делает макияж и укладку<br> для вашей фотоссесии.<br> Вы будете в восторге от ее работы!
+
+    h2 График работы
+    .grafik
+      h3 Понедельник-   09:00-21:00
+      h3 Вторник-   09:00-21:00
+      h3 Среда-  09:00-21:00
+      h3 Четверг-  09:00-21:00
+      h3 Пятница-  09:00-21:00
+      h3 Суббота-  09:00-00:00
+      h3 Воскресенье-  Выходной
+include modules/footer.pug
